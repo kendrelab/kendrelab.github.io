@@ -264,7 +264,7 @@ p  { margin: 0 0 1.1em; }
 .shop-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 26px; }
 @media (max-width: 760px) { .shop-photos { grid-template-columns: 1fr; } }
 .shop-photos figure { margin: 0; }
-.shop-photos img { width: 100%; aspect-ratio: 16/9; object-fit: cover;
+.shop-photos img { width: 100%; aspect-ratio: 1500/691; object-fit: cover;
   border-radius: var(--radius); box-shadow: var(--shadow-sm); }
 .shop-photos figcaption { margin-top: 10px; font-size: .86rem; color: var(--ink-500); }
 
