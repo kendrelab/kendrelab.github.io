@@ -808,7 +808,6 @@ p  { margin: 0 0 1.1em; }
   padding: 20px 4px; border-bottom: 1px solid var(--line);
 }
 .alum:last-child { border-bottom: 0; }
-@media (max-width: 560px) { .alum { grid-template-columns: 1fr; gap: 6px; } }
 .alum-when {
   font-size: .8rem; font-weight: 700; letter-spacing: .04em; color: var(--blue-600);
   padding-top: 3px;
@@ -934,7 +933,24 @@ p  { margin: 0 0 1.1em; }
   transition: background .18s ease, color .18s ease;
 }
 .alum-link a:hover { background: var(--blue-600); color: #fff; }
-@media (max-width: 560px) { .alum { grid-template-columns: 1fr 44px; } }
+
+/* Alumni on a phone: the row has three children — year, name block, link.
+   Two columns are not enough for all three, so the year takes its own line.
+   Keep this as the ONLY mobile rule for .alum; earlier duplicates fought
+   each other and squeezed the name into the 44px icon column. */
+@media (max-width: 560px) {
+  .alum {
+    grid-template-columns: 1fr auto;
+    gap: 3px 14px;
+    align-items: start;
+    padding: 18px 4px;
+  }
+  .alum-when { grid-column: 1 / -1; }
+  .alum-body { grid-column: 1; min-width: 0; }
+  .alum-link { grid-column: 2; grid-row: 2; align-self: center; }
+  .alum-head { font-size: 1.08rem; }
+  .alum-block + .alum-block { margin-top: 34px; }
+}
 
 /* ---------- 29. Contact page ---------- */
 .contact-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 22px; }
