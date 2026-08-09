@@ -523,16 +523,13 @@ p  { margin: 0 0 1.1em; }
 .news-panel-head h2 { font-size: 1.44rem; margin: 0; }
 .news-panel-head .eyebrow { margin-bottom: .35rem; }
 
+/* No fixed height and no inner scrollbar. The old version capped this at 448px,
+   a number tuned to exactly five collapsed items at one window width — at any other
+   width, zoom level or font size the list overflowed and items were silently clipped.
+   The panel now sizes to its content and the page scrolls instead. */
 .news-scroll {
   display: flex; flex-direction: column; gap: 10px;
-  max-height: 448px; overflow-y: auto; overscroll-behavior: contain;
-  padding-right: 10px; margin-right: -6px;
-  scrollbar-width: thin; scrollbar-color: #c2d6e3 transparent;
 }
-.news-scroll::-webkit-scrollbar { width: 7px; }
-.news-scroll::-webkit-scrollbar-track { background: transparent; }
-.news-scroll::-webkit-scrollbar-thumb { background: #c2d6e3; border-radius: 4px; }
-.news-scroll::-webkit-scrollbar-thumb:hover { background: var(--ink-300); }
 
 /* stack date above title — the panel column is narrow */
 .news-scroll .news-item > button { flex-direction: column; align-items: flex-start; gap: 7px; padding: 14px 16px; }
@@ -543,13 +540,9 @@ p  { margin: 0 0 1.1em; }
 .news-scroll .news-item > button { padding-right: 38px; }
 .news-scroll .news-body { padding: 0 16px 15px; font-size: .9rem; }
 
-/* fade hint at the bottom so it reads as scrollable */
+/* The bottom fade gradient is gone with the scroll it used to hint at. It was
+   unconditional, so it greyed out the last headline even when nothing was hidden. */
 .news-panel { position: relative; }
-.news-panel::after {
-  content: ""; position: absolute; left: 24px; right: 30px; bottom: 22px; height: 34px;
-  background: linear-gradient(to bottom, transparent, var(--surface-alt));
-  pointer-events: none; border-radius: 0 0 var(--radius) var(--radius);
-}
 .news-item > button:hover { background: var(--blue-050); }
 .news-date {
   flex: none; font-size: .72rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
