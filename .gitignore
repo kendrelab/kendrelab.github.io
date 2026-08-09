@@ -1,0 +1,17 @@
+# macOS and Windows put these in every folder; they are not part of the site
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# editor leftovers
+*.swp
+*~
+
+# never publish these — they live outside this folder, but just in case one wanders in
+PREVIEW-whole-site.html
+SITE-CHECKLIST.md
+DEPLOY.md
+IMAGES-TODO.md
+data.py
+build_*.py

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img"
+     aria-labelledby="fbTitle fbDesc" font-family="'Source Sans 3', 'Segoe UI', system-ui, sans-serif">
+  <title id="fbTitle">Same injury, different course</title>
+  <desc id="fbDesc">Two people sustain the same chronic liver injury. In one, host genetic background
+    restrains scarring and fibrosis stays mild. In the other, susceptibility factors including
+    Y chromosome-linked genes accelerate scarring towards advanced fibrosis.</desc>
+
+  <defs>
+    <linearGradient id="calm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf4fb"/><stop offset="1" stop-color="#f6fbfe"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdf0e8"/><stop offset="1" stop-color="#fef8f4"/>
+    </linearGradient>
+    <marker id="fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#5b7383"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="620" rx="16" fill="#ffffff"/>
+
+  <!-- shared insult -->
+  <rect x="212" y="26" width="376" height="52" rx="26" fill="#0d3b5c"/>
+  <text x="400" y="49" text-anchor="middle" fill="#9dd6f5" font-size="11.5" font-weight="700"
+        letter-spacing="1.6">THE SAME CHRONIC INJURY</text>
+  <text x="400" y="68" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="600">
+    infection &#183; inflammation &#183; metabolic stress
+  </text>
+
+  <path d="M348 82 L232 118" stroke="#93a7b4" stroke-width="2" fill="none" marker-end="url(#fa)"/>
+  <path d="M452 82 L568 118" stroke="#93a7b4" stroke-width="2" fill="none" marker-end="url(#fa)"/>
+
+  <!-- ================= PANEL A : restrained ================= -->
+  <rect x="34" y="126" width="346" height="392" rx="14" fill="url(#calm)" stroke="#c9e0f0"/>
+  <rect x="34" y="126" width="346" height="5" rx="2.5" fill="#1c6fa8"/>
+  <text x="207" y="160" text-anchor="middle" fill="#12507b" font-size="12" font-weight="700"
+        letter-spacing="1.3">PROTECTIVE HOST BACKGROUND</text>
+
+  <g transform="translate(97 186) scale(0.94)">
+    <path d="M18 62 C6 34, 34 12, 74 12 L108 12 C120 4, 136 4, 146 14 C188 18, 212 44, 208 78
+             C204 116, 168 140, 118 142 C64 144, 30 112, 18 62 Z"
+          fill="#dbeefa" stroke="#1c6fa8" stroke-width="2.4"/>
+    <g fill="none" stroke="#1c6fa8" stroke-opacity=".55" stroke-width="2.6" stroke-linecap="round">
+      <path d="M62 48 C74 58, 78 74, 70 92"/>
+      <path d="M140 44 C150 58, 150 76, 138 90"/>
+    </g>
+    <g fill="#1c6fa8" fill-opacity=".28">
+      <circle cx="48" cy="76" r="5"/><circle cx="96" cy="60" r="5"/><circle cx="112" cy="102" r="5"/>
+      <circle cx="166" cy="70" r="5"/><circle cx="170" cy="108" r="5"/><circle cx="72" cy="112" r="5"/>
+    </g>
+  </g>
+  <text x="207" y="368" text-anchor="middle" fill="#2f4553" font-size="13">little scar tissue laid down</text>
+
+  <path d="M207 384 L207 414" stroke="#5b7383" stroke-width="2" marker-end="url(#fa)"/>
+  <text x="207" y="460" text-anchor="middle" fill="#12507b" font-size="17" font-weight="700">Mild fibrosis</text>
+  <text x="207" y="483" text-anchor="middle" fill="#5b7383" font-size="12.5">function largely preserved</text>
+
+  <!-- ================= PANEL B : accelerated ================= -->
+  <rect x="420" y="126" width="346" height="392" rx="14" fill="url(#warm)" stroke="#f0d3c1"/>
+  <rect x="420" y="126" width="346" height="5" rx="2.5" fill="#d97742"/>
+  <text x="593" y="160" text-anchor="middle" fill="#bd5f2d" font-size="12" font-weight="700"
+        letter-spacing="1.3">SUSCEPTIBLE HOST BACKGROUND</text>
+
+  <g transform="translate(483 186) scale(0.94)">
+    <path d="M18 62 C6 34, 34 12, 74 12 L108 12 C120 4, 136 4, 146 14 C188 18, 212 44, 208 78
+             C204 116, 168 140, 118 142 C64 144, 30 112, 18 62 Z"
+          fill="#fae2d2" stroke="#d97742" stroke-width="2.4"/>
+    <g fill="none" stroke="#bd5f2d" stroke-opacity=".62" stroke-width="2.8" stroke-linecap="round">
+      <path d="M44 54 C58 70, 56 92, 44 106"/>
+      <path d="M76 36 C90 58, 88 92, 74 118"/>
+      <path d="M110 32 C124 60, 122 96, 108 124"/>
+      <path d="M144 38 C158 62, 156 94, 142 116"/>
+      <path d="M176 52 C188 70, 186 92, 174 106"/>
+    </g>
+    <g fill="none" stroke="#bd5f2d" stroke-opacity=".38" stroke-width="2.2" stroke-linecap="round">
+      <path d="M40 78 C80 68, 140 68, 182 78"/>
+      <path d="M46 100 C86 92, 138 92, 176 100"/>
+    </g>
+  </g>
+  <text x="593" y="368" text-anchor="middle" fill="#2f4553" font-size="13">dense, bridging scar tissue</text>
+
+  <path d="M593 384 L593 414" stroke="#5b7383" stroke-width="2" marker-end="url(#fa)"/>
+  <text x="593" y="460" text-anchor="middle" fill="#bd5f2d" font-size="17" font-weight="700">Advanced fibrosis</text>
+  <text x="593" y="483" text-anchor="middle" fill="#5b7383" font-size="12.5">towards cirrhosis and cancer</text>
+
+  <!-- what we study -->
+  <rect x="176" y="536" width="448" height="34" rx="17" fill="#e3f1fa" stroke="#1c6fa8"/>
+  <text x="400" y="558" text-anchor="middle" fill="#12507b" font-size="12.5" font-weight="600">
+    Which host variants tip the balance &#8212; including Y chromosome-linked genes?
+  </text>
+
+  <text x="400" y="600" text-anchor="middle" fill="#5b7383" font-size="13.5">
+    The same injury, two courses &#8212; host genetics shape how the liver scars.
+  </text>
+</svg>

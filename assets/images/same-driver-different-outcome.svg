@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img"
+     aria-labelledby="sdTitle sdDesc" font-family="'Source Sans 3', 'Segoe UI', system-ui, sans-serif">
+  <title id="sdTitle">Same driver, different outcome</title>
+  <desc id="sdDesc">Two tumours carrying the same FGFR2 fusion driver respond differently to the same FGFR
+    inhibitor. Without a co-mutation the tumour regresses; with a co-occurring KRAS mutation it continues to
+    grow. Co-targeting MEK restores sensitivity.</desc>
+
+  <defs>
+    <linearGradient id="skyA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf4fb"/><stop offset="1" stop-color="#f6fbfe"/>
+    </linearGradient>
+    <linearGradient id="skyB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdf0e8"/><stop offset="1" stop-color="#fef8f4"/>
+    </linearGradient>
+    <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#5b7383"/>
+    </marker>
+    <marker id="arwO" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#bd5f2d"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="620" rx="16" fill="#ffffff"/>
+
+  <!-- ============ shared driver ============ -->
+  <rect x="228" y="26" width="344" height="52" rx="26" fill="#0d3b5c"/>
+  <text x="400" y="49" text-anchor="middle" fill="#9dd6f5" font-size="11.5" font-weight="700"
+        letter-spacing="1.6">SAME ACTIONABLE DRIVER</text>
+  <text x="400" y="68" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="600">
+    <tspan font-style="italic">FGFR2</tspan> fusion
+  </text>
+
+  <path d="M340 82 L232 118" stroke="#93a7b4" stroke-width="2" fill="none" marker-end="url(#arw)"/>
+  <path d="M460 82 L568 118" stroke="#93a7b4" stroke-width="2" fill="none" marker-end="url(#arw)"/>
+
+  <!-- ============ PANEL A : responds ============ -->
+  <rect x="34" y="126" width="346" height="392" rx="14" fill="url(#skyA)" stroke="#c9e0f0"/>
+  <rect x="34" y="126" width="346" height="5" rx="2.5" fill="#1c6fa8"/>
+
+  <text x="207" y="160" text-anchor="middle" fill="#12507b" font-size="12" font-weight="700"
+        letter-spacing="1.3">DRIVER ALONE</text>
+
+  <!-- cell A -->
+  <circle cx="207" cy="228" r="46" fill="#ffffff" stroke="#1c6fa8" stroke-width="2"/>
+  <circle cx="207" cy="228" r="21" fill="#e3f1fa" stroke="#2b8fd0" stroke-width="1.5"/>
+  <rect x="186" y="222" width="20" height="7" rx="3.5" fill="#1c6fa8"/>
+  <rect x="208" y="222" width="14" height="7" rx="3.5" fill="#7fd4f5"/>
+  <text x="207" y="296" text-anchor="middle" fill="#2f4553" font-size="13">Cholangiocyte</text>
+
+  <path d="M207 308 L207 344" stroke="#5b7383" stroke-width="2" marker-end="url(#arw)"/>
+  <rect x="130" y="348" width="154" height="30" rx="15" fill="#ffffff" stroke="#1c6fa8"/>
+  <text x="207" y="368" text-anchor="middle" fill="#12507b" font-size="12.5" font-weight="600">FGFR inhibitor</text>
+  <path d="M207 382 L207 412" stroke="#5b7383" stroke-width="2" marker-end="url(#arw)"/>
+
+  <!-- shrinking tumour -->
+  <g fill="#1c6fa8" opacity=".28">
+    <circle cx="196" cy="446" r="10"/><circle cx="216" cy="443" r="8"/><circle cx="206" cy="459" r="7"/>
+  </g>
+  <text x="207" y="491" text-anchor="middle" fill="#12507b" font-size="16" font-weight="700">Responds</text>
+  <text x="207" y="508" text-anchor="middle" fill="#5b7383" font-size="12">tumour regresses</text>
+
+  <!-- ============ PANEL B : resists ============ -->
+  <rect x="420" y="126" width="346" height="392" rx="14" fill="url(#skyB)" stroke="#f0d3c1"/>
+  <rect x="420" y="126" width="346" height="5" rx="2.5" fill="#d97742"/>
+
+  <text x="593" y="160" text-anchor="middle" fill="#bd5f2d" font-size="12" font-weight="700"
+        letter-spacing="1.3">DRIVER + CO-MUTATION</text>
+
+  <!-- cell B -->
+  <circle cx="593" cy="228" r="46" fill="#ffffff" stroke="#d97742" stroke-width="2"/>
+  <circle cx="593" cy="228" r="21" fill="#fbeade" stroke="#d97742" stroke-width="1.5"/>
+  <rect x="572" y="222" width="20" height="7" rx="3.5" fill="#1c6fa8"/>
+  <rect x="594" y="222" width="14" height="7" rx="3.5" fill="#7fd4f5"/>
+  <circle cx="593" cy="196" r="13" fill="#d97742"/>
+  <text x="593" y="200" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="700">KRAS</text>
+  <text x="593" y="296" text-anchor="middle" fill="#2f4553" font-size="13">Cholangiocyte</text>
+
+  <path d="M593 308 L593 344" stroke="#5b7383" stroke-width="2" marker-end="url(#arw)"/>
+  <rect x="516" y="348" width="154" height="30" rx="15" fill="#ffffff" stroke="#d97742"/>
+  <text x="593" y="368" text-anchor="middle" fill="#bd5f2d" font-size="12.5" font-weight="600">FGFR inhibitor</text>
+  <path d="M593 382 L593 412" stroke="#5b7383" stroke-width="2" marker-end="url(#arw)"/>
+
+  <!-- growing tumour -->
+  <g fill="#d97742" opacity=".55">
+    <circle cx="572" cy="447" r="14"/><circle cx="597" cy="440" r="12"/><circle cx="612" cy="456" r="11"/>
+    <circle cx="585" cy="463" r="12"/><circle cx="605" cy="428" r="8"/>
+  </g>
+  <text x="593" y="491" text-anchor="middle" fill="#bd5f2d" font-size="16" font-weight="700">Resists</text>
+  <text x="593" y="508" text-anchor="middle" fill="#5b7383" font-size="12">tumour keeps growing</text>
+
+  <!-- ============ rescue ============ -->
+  <path d="M593 522 C593 546, 460 548, 400 552" stroke="#bd5f2d" stroke-width="2" stroke-dasharray="6 5"
+        fill="none" marker-end="url(#arwO)"/>
+  <rect x="118" y="538" width="302" height="30" rx="15" fill="#fbeade" stroke="#d97742"/>
+  <text x="269" y="558" text-anchor="middle" fill="#bd5f2d" font-size="12.5" font-weight="600">
+    + MEK inhibitor &#8594; sensitivity restored
+  </text>
+
+  <text x="400" y="597" text-anchor="middle" fill="#5b7383" font-size="13.5">
+    The co-mutational context, not the driver alone, determines the response.
+  </text>
+</svg>

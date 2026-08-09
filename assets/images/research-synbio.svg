@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img"
+     aria-labelledby="sbTitle sbDesc" font-family="'Source Sans 3', 'Segoe UI', system-ui, sans-serif">
+  <title id="sbTitle">Bacterial signals reaching host cells, and circuits built to read them</title>
+  <desc id="sbDesc">Bacteria release AHL quorum-sensing molecules. These cross to a host epithelial
+    cell, are received at the membrane, and alter gene expression in the nucleus — affecting immune
+    regulation and the progression of oral carcinogenesis. Below, an engineered genetic circuit built
+    in the lab reports on and rewires that signal.</desc>
+
+  <defs>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e6f6f1"/><stop offset="1" stop-color="#eaf4fb"/>
+    </linearGradient>
+    <marker id="sa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#5b7383"/>
+    </marker>
+    <marker id="sg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1d8a6a"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="620" rx="16" fill="#ffffff"/>
+
+  <rect x="236" y="24" width="328" height="52" rx="26" fill="#0d3b5c"/>
+  <text x="400" y="47" text-anchor="middle" fill="#9dd6f5" font-size="11.5" font-weight="700"
+        letter-spacing="1.6">INTER-KINGDOM SIGNALLING</text>
+  <text x="400" y="66" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="600">
+    bacteria talking to host cells
+  </text>
+
+  <rect x="30" y="98" width="740" height="308" rx="14" fill="url(#band)" stroke="#cfe6de"/>
+
+  <!-- bacteria -->
+  <text x="140" y="132" text-anchor="middle" fill="#0f6e56" font-size="12" font-weight="700"
+        letter-spacing="1.3">BACTERIA</text>
+  <g transform="rotate(-16 128 196)">
+    <rect x="66" y="176" width="124" height="42" rx="21" fill="#d3f0e5" stroke="#1d8a6a" stroke-width="2.4"/>
+    <circle cx="96" cy="192" r="4" fill="#1d8a6a" fill-opacity=".5"/>
+    <circle cx="126" cy="203" r="4" fill="#1d8a6a" fill-opacity=".5"/>
+    <circle cx="156" cy="190" r="4" fill="#1d8a6a" fill-opacity=".5"/>
+  </g>
+  <g transform="rotate(12 150 268)">
+    <rect x="96" y="250" width="112" height="38" rx="19" fill="#d3f0e5" stroke="#1d8a6a" stroke-width="2.4"/>
+    <circle cx="124" cy="264" r="3.6" fill="#1d8a6a" fill-opacity=".5"/>
+    <circle cx="152" cy="274" r="3.6" fill="#1d8a6a" fill-opacity=".5"/>
+    <circle cx="180" cy="262" r="3.6" fill="#1d8a6a" fill-opacity=".5"/>
+  </g>
+  <text x="140" y="336" text-anchor="middle" fill="#2f4553" font-size="13">release AHL molecules</text>
+
+  <!-- signal crossing -->
+  <path d="M232 232 C310 208, 380 208, 448 224" stroke="#1d8a6a" stroke-width="2.4"
+        stroke-dasharray="9 7" fill="none" marker-end="url(#sg)"/>
+  <g fill="#d97742">
+    <circle cx="258" cy="224" r="7"/><circle cx="300" cy="214" r="6"/>
+    <circle cx="344" cy="211" r="7"/><circle cx="388" cy="213" r="6"/>
+    <circle cx="428" cy="219" r="7"/>
+  </g>
+  <text x="340" y="178" text-anchor="middle" fill="#bd5f2d" font-size="12.5" font-weight="600">
+    AHL quorum sensing
+  </text>
+
+  <!-- host cell -->
+  <text x="616" y="132" text-anchor="middle" fill="#12507b" font-size="12" font-weight="700"
+        letter-spacing="1.3">HOST CELL</text>
+  <ellipse cx="616" cy="252" rx="118" ry="96" fill="#e3f1fa" stroke="#1c6fa8" stroke-width="2.6"/>
+  <rect x="486" y="234" width="26" height="34" rx="9" fill="#d97742" fill-opacity=".85"/>
+  <text x="470" y="296" text-anchor="end" fill="#bd5f2d" font-size="11.5" font-weight="600">receptor</text>
+  <ellipse cx="638" cy="250" rx="52" ry="44" fill="#ffffff" stroke="#1c6fa8" stroke-width="2"/>
+  <g stroke="#1c6fa8" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-opacity=".8">
+    <path d="M614 232 C628 240, 628 258, 614 268"/>
+    <path d="M662 232 C648 240, 648 258, 662 268"/>
+  </g>
+  <text x="638" y="308" text-anchor="middle" fill="#12507b" font-size="11.5" font-weight="600">nucleus</text>
+  <path d="M520 250 C548 250, 560 250, 580 250" stroke="#5b7383" stroke-width="2" marker-end="url(#sa)"/>
+  <text x="616" y="376" text-anchor="middle" fill="#2f4553" font-size="13">
+    gene expression, immune regulation, carcinogenesis
+  </text>
+
+  <!-- engineered circuit -->
+  <text x="400" y="446" text-anchor="middle" fill="#12507b" font-size="12" font-weight="700"
+        letter-spacing="1.3">WHAT WE BUILD</text>
+
+  <line x1="96" y1="522" x2="704" y2="522" stroke="#5b7383" stroke-width="3.2"/>
+  <g fill="none" stroke="#1d8a6a" stroke-width="3.4" stroke-linecap="round">
+    <path d="M124 522 L124 486 L160 486"/>
+  </g>
+  <path d="M152 478 L170 486 L152 494 Z" fill="#1d8a6a"/>
+  <path d="M188 522 a19 19 0 0 1 38 0 Z" fill="#a9dcf3" stroke="#1c6fa8" stroke-width="2.4"/>
+  <path d="M248 522 L248 484 L360 484 L382 503 L360 522 Z" fill="#a9dcf3" fill-opacity=".45"
+        stroke="#1c6fa8" stroke-width="2.6" stroke-linejoin="round"/>
+  <text x="312" y="509" text-anchor="middle" fill="#12507b" font-size="12.5" font-weight="600">reporter</text>
+  <path d="M410 522 L410 486 M394 486 L426 486" stroke="#5b7383" stroke-width="3.2" stroke-linecap="round"/>
+
+  <g fill="none" stroke="#d97742" stroke-width="3.4" stroke-linecap="round">
+    <path d="M462 522 L462 486 L498 486"/>
+  </g>
+  <path d="M490 478 L508 486 L490 494 Z" fill="#d97742"/>
+  <path d="M526 522 a19 19 0 0 1 38 0 Z" fill="#fbeade" stroke="#d97742" stroke-width="2.4"/>
+  <path d="M586 522 L586 484 L648 484 L670 503 L648 522 Z" fill="#fbeade"
+        stroke="#d97742" stroke-width="2.6" stroke-linejoin="round"/>
+  <text x="620" y="509" text-anchor="middle" fill="#bd5f2d" font-size="12" font-weight="600">effector</text>
+
+  <text x="400" y="566" text-anchor="middle" fill="#5b7383" font-size="12.5">
+    synthetic circuits that report on the signal &#8212; and can rewire the response
+  </text>
+
+  <text x="400" y="600" text-anchor="middle" fill="#5b7383" font-size="13.5">
+    What bacteria say to host cells, and how we listen in.
+  </text>
+</svg>
